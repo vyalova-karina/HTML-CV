@@ -129,3 +129,69 @@ table p {
     white-space: pre-line;
 }
 
+#menu li {
+    list-style: none;
+    display: inline-block;
+    font-family: 'Lora', serif;
+    color: #323232;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+ul#menu {
+  margin-left: 0;
+  position: relative;
+  height: 250px;
+
+}
+
+.content {
+    left: 0;
+    position: absolute;
+    display: none;
+    margin-top: 10px;
+}
+
+#menu input:checked + label {
+    color: #f4730a;
+}
+
+#menu input:checked ~ div.content {
+    display: block;
+}
+
+ul#menu input {
+    display: none
+}
+
+div.content {
+    height: 200px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #323320;
+}
+
+.skis {
+    background-image: url("images/kirovsk3.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 55% 75%;
+}
+
+.content p {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #323232;
+}
+
+.travel {
+    background-image: url("images/travel.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 85% 15%;
+}
