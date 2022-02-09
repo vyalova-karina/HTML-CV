@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Lora', serif;
 }
 
 .container {
@@ -51,11 +52,6 @@ div.avatar-container {
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
-}
-
-h1, h2, .subheader, p, ul {
-    font-family: 'Lora', serif;
-    color: #000000;
 }
 
 p {
@@ -120,7 +116,7 @@ td {
     padding-top: 4px;
 }
 
-ul {
+table ul {
     margin-left: 16px;
     margin-bottom: 10px;
 }
@@ -129,10 +125,7 @@ table p {
     white-space: pre-line;
 }
 
-#menu li {
-    list-style: none;
-    display: inline-block;
-    font-family: 'Lora', serif;
+.folder-title {
     color: #323232;
     font-size: 14px;
     font-weight: 700;
@@ -140,8 +133,6 @@ table p {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
-
 
 ul#menu {
   margin-left: 0;
@@ -155,6 +146,14 @@ ul#menu {
     position: absolute;
     display: none;
     margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #323232;
+    height: 210px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #323320;
+    box-sizing: border-box;
 }
 
 #menu input:checked + label {
@@ -169,29 +168,37 @@ ul#menu input {
     display: none
 }
 
-div.content {
-    height: 200px;
-    width: 100%;
-    border-radius: 6px;
-    border: 1px solid #323320;
-}
-
 .skis {
-    background-image: url("images/kirovsk3.jpg");
+    background-image: url("images/Elbrus.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 55% 75%;
 }
 
-.content p {
-    margin-top: 10px;
-    margin-left: 10px;
-    color: #323232;
-}
-
 .travel {
     background-image: url("images/travel.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 85% 15%;
+    background-size: auto 320px;
+    background-position: 55% 5%;
+}
+
+.books {
+     background-image: url("images/book.jpg");
+     background-repeat: no-repeat;
+     background-size: auto 520px;
+     background-position: 2% 65%;
+}
+
+.content li {
+margin-bottom: 6px;
+}
+
+.country li {
+    display: list-item;
+}
+
+#menu > li {
+    list-style: none;
+    display: inline-block;
+    list-style-position: inside;
 }
